@@ -1,11 +1,13 @@
 [package]
-name = "dolfhin-pow"
+name = "pow"
 version = "4.0.0"
 edition = "2018"
 
 [dependencies]
-sc-consensus-pow = {version = "0.10.0-dev" , default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19"}
-# sp-consensus-pow = {version = '5.0.0-dev', git = 'https://github.com/paritytech/substrate.git',tag = 'devhub/latest'}
-sp-runtime = {version = "6.0.0" , default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19"}
-# sp-core = {version = '6.0.0', git = 'https://github.com/paritytech/substrate.git',tag = 'devhub/latest'}
-# codec = { version ='3.1.2', package = "parity-scale-codec"}
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = [
+	"derive",
+] }
+sp-core = { default-features = false, version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.20" }
+sp-io = { default-features = false, version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.20" }
+sp-runtime = { default-features = false, version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.20" }
+sp-consensus-pow = {version = "0.10.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.19"} 
