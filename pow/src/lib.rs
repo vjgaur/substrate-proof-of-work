@@ -3,8 +3,8 @@ use sp_consensus_pow:: Seal;
 use sp_core::{U256, H256};
 //The concept of block in susbtrate is generic, its a traits and you can implement a concrete type for the trait
 use sp_runtime::traits::Block as BlockT;
-use codec:: {Encode, Decode} //to encode and decode the Seal
-use sha3::Sha3_256
+use codec:: {Encode, Decode}; //to encode and decode the Seal
+use sha3::Sha3_256;
 
 /*This is where we will
 implement how and what type of
